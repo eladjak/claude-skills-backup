@@ -86,6 +86,15 @@ echo "<h1>שלום עולם</h1>" | node ~/.claude/skills/html-to-pptx/scripts/h
 2. Always add `--rtl` flag
 3. Use Hebrew-supporting fonts: Heebo, David, Noto Sans Hebrew
 4. For complex layouts, use `--mode=image` for pixel-perfect results
+5. **RECOMMENDED**: `--slide-per=section --mode=image` for complex Hebrew presentations
+
+## Overflow / Content Cramping
+
+When a slide has too much content:
+- In `--mode=image`, overflow detection splits slides at 1.5x height threshold
+- Use explicit `<section>` breaks in HTML to control slide boundaries
+- If a slide looks cramped, split the content into two `<section>` elements
+- **BUG FIXED**: Use `element.screenshot()` not `page.screenshot(clip)` in image mode (was repeating same slide image)
 
 ## Slide Structure
 
