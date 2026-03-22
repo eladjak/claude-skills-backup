@@ -43,6 +43,12 @@ Read(file_path=".claude/cc10x/patterns.md")  # Check Common Gotchas!
 7. **Verify** - Tests pass, functionality restored
 8. **Update memory** - Add to Common Gotchas
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After fixing, ask: could this bug class be PREVENTED by a skill, rule, or lint check?
+- Update Common Gotchas with the root cause pattern
+- If similar bugs keep appearing, create a prevention skill or pre-commit check
+- Share the debugging technique used — if novel, codify it for future agents
+
 ## Output
 ```
 ## Bug Fixed: [issue]
@@ -50,6 +56,7 @@ Read(file_path=".claude/cc10x/patterns.md")  # Check Common Gotchas!
 - Fix: [file:line change]
 - Evidence: [command] → exit 0
 - Regression test: [test file]
+- Prevention: [how to prevent this class of bug in the future]
 
 ---
 WORKFLOW_CONTINUES: YES

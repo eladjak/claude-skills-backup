@@ -86,3 +86,9 @@ const config = {
 2. Add STRIPE_KEY to .env.example
 3. Remove unused OLD_API_KEY
 ```
+
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After validating env, note: what env issues recur? Create prevention checks
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar

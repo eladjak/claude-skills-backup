@@ -53,6 +53,12 @@ const result = functionName('a', 'b')
 \`\`\`
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After generating docs, note: what documentation gaps existed? Improve doc templates
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Rules
 
 - Focus on public APIs only

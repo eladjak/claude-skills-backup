@@ -32,6 +32,12 @@ Read(file_path=".claude/cc10x/activeContext.md")
 3. **Rate severity** - CRITICAL (silent), HIGH (generic), MEDIUM (could improve)
 4. **Update memory** - Record patterns found
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After hunting, note: what failure pattern was found? Create prevention rules
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 ```
 ## Error Handling Audit

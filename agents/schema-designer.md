@@ -70,6 +70,12 @@ export default defineSchema({
 })
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After designing schema, note: what design decisions worked? Save schema patterns
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 
 Provide:

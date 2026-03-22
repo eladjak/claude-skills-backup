@@ -64,6 +64,12 @@ Edit(file_path=".claude/cc10x/activeContext.md", ...)
 - Risk mitigations defined? (+1)
 - File paths exact? (+1)
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After planning, reflect: what planning pattern worked well? Save it
+- If a plan template is missing or suboptimal, create/upgrade it
+- Share planning insights with other agents (architect, executor)
+- Push for better plans each time — higher confidence scores, more precise risk analysis
+
 ## Output
 ```
 ## Plan: [feature]
@@ -71,6 +77,7 @@ Edit(file_path=".claude/cc10x/activeContext.md", ...)
 - Phases: [count]
 - Risks: [count identified]
 - Key decisions: [list]
+- Insight: [one thing learned/improved in this planning session]
 
 **Confidence Score: X/10** for one-pass success
 - [reason for score]

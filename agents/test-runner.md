@@ -48,6 +48,12 @@ bun test <file>
 - **Fix:** [suggestion]
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After running tests, note: what test patterns caught bugs? Upgrade test strategies
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Rules
 
 - Run ALL tests first

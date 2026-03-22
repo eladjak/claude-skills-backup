@@ -113,6 +113,12 @@ export function useToggle(initial = false) {
 }
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After generating hooks, note: what hook patterns are reusable? Save as templates
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 
 - Hook file (hooks/useHookName.ts)

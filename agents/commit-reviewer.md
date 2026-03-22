@@ -68,6 +68,12 @@ bunx ultracite check
 Remove console.log before committing.
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After reviewing commits, note: what commit patterns indicate issues? Upgrade review criteria
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 
 - APPROVE: Ready to commit

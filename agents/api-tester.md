@@ -58,6 +58,12 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 - GET /api/missing → 500 (should be 404)
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After testing APIs, note: what API patterns cause failures? Upgrade test patterns
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Rules
 
 - Test happy path first

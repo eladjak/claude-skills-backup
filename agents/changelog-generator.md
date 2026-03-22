@@ -84,3 +84,9 @@ feat: add user authentication
 
 Closes #123
 ```
+
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After generating changelog, note: what commit message patterns help? Improve guides
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar

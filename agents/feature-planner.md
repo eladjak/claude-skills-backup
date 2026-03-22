@@ -82,6 +82,12 @@ Database:
 | API latency | Medium | Add loading states |
 | Security | High | Follow OWASP |
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After planning features, note: what planning patterns led to successful execution? Save them
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 
 - Feature breakdown

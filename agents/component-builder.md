@@ -40,6 +40,12 @@ Check for plan reference → If exists, follow plan tasks in order.
 - DB: Migrations? N+1 queries? Transactions?
 - All: Edge cases listed? Error handling planned?
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After building, note: what component patterns worked well? Save reusable patterns
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 ```
 ## Built: [feature]

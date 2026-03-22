@@ -24,3 +24,6 @@ To run self-improvement:
 ```
 Use personal-agent with the Self-Improvement Cycles section
 ```
+
+## Growth
+See personal-agent for active Growth Directive implementation.

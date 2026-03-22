@@ -75,6 +75,12 @@ import { User } from './types'
 import type { User } from './types'
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After organizing imports, note: what import patterns are messy? Create standards
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 
 ```

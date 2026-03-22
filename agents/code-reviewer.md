@@ -48,10 +48,17 @@ git ls-files --others --exclude-standard      # NEW untracked files
 | 0-79 | Uncertain | Don't report |
 | 80-100 | Verified | **REPORT** |
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After review, note patterns: recurring issues → suggest skill/rule to prevent them
+- If review catches something novel, update review patterns for future use
+- Proactively improve review criteria based on what you discover
+- Share anti-patterns with other agents to prevent issues upstream
+
 ## Output
 ```
 ## Review: [Approve/Changes Requested]
 - Functionality: [Works/Broken]
+- Insight: [pattern/anti-pattern discovered worth codifying]
 
 ### Critical (≥80)
 - [95] [issue] - file:line → Fix: [action]

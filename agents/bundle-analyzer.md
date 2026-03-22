@@ -87,3 +87,9 @@ const AdminPanel = lazy(() => import('./AdminPanel'))
 
 ### Estimated Savings: 160KB (35%)
 ```
+
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After analyzing bundles, note: what bundle issues recur? Create optimization rules
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar

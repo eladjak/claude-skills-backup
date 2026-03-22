@@ -58,6 +58,12 @@ LSP: findReferences for coupling
 - DRY up error handling
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After refactoring, note: what refactoring patterns were effective? Codify them
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 
 1. List of issues found

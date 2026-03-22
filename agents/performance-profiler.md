@@ -64,6 +64,12 @@ node --prof src/index.ts
 3. Extract shared logic to reduce duplication
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After profiling, note: what performance patterns emerge? Create optimization rules
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Rules
 
 - Measure before optimizing

@@ -59,6 +59,12 @@ Grep(pattern="from ['\"]<package>")
 2. Consider removing Y (unused)
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After checking deps, note: what dependency issues recur? Create prevention checks
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Rules
 
 - Check both dependencies and devDependencies

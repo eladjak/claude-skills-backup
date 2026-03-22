@@ -99,3 +99,9 @@ className="focus:ring-2 focus:ring-blue-500 focus:outline-none"
 
 ### Score: 7/10
 ```
+
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After checking a11y, note: what accessibility issues recur? Upgrade checklists
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar

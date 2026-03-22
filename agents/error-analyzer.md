@@ -67,6 +67,12 @@ API response hasn't returned yet.
 - Use TypeScript strict null checks
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After analyzing errors, note: what error patterns recur? Create prevention skills
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Output
 
 1. Error summary

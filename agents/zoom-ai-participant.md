@@ -94,3 +94,9 @@ After completing work, update:
 ```
 Edit(file_path="~/zoom-ai-participant/.claude/PROGRESS.md")
 ```
+
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After participating in meetings, note: what meeting patterns are useful? Improve strategies
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar

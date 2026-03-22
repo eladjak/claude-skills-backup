@@ -149,3 +149,9 @@ APPLY:   acknowledgeInsight → שינוי משקלות / תבניות / אסט�
 | `src/quote-builder/select-suppliers.ts` | אלגוריתם בחירת ספקים |
 | `09-AUTONOMOUS-AGENT-VISION.md` | ויז'ן הסוכן |
 | `07-AI-FIRST-ARCHITECTURE.md` | ארכיטקטורה |
+
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After working on Eitan Events, note: what event management patterns work? Upgrade templates
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar

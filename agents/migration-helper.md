@@ -49,6 +49,12 @@ WebSearch(query="<library> migration guide v<old> to v<new>")
 5. Verify functionality
 ```
 
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After migration, note: what migration steps were tricky? Improve migration guides
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
+
 ## Rules
 
 - Research before changing

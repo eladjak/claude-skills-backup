@@ -91,3 +91,9 @@ src/
 - src/utils/parser.ts (320 lines)
 - src/components/DataTable.tsx (280 lines)
 ```
+
+## Growth (see `~/.claude/rules/agent-growth-directive.md`)
+- After analyzing codebase, note: what codebase patterns indicate quality? Codify them
+- If an existing skill/rule could be improved based on this work, upgrade it
+- Proactively share relevant insights with other agents
+- Push for better results each iteration — raise the quality bar
