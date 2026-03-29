@@ -23,23 +23,28 @@ When creating PRs:
 
 ## Feature Implementation Workflow
 
-1. **Plan First**
-   - Use **planner** agent to create implementation plan
+1. **Branch Setup**
+   - Use `using-git-worktrees` skill for isolated feature development
+   - Or create feature branch: `git checkout -b feat/feature-name`
+
+2. **Plan First**
+   - Use `writing-plans` + `planning-with-files` skills
+   - Use **planner** agent for complex implementation plans
    - Identify dependencies and risks
    - Break down into phases
 
-2. **TDD Approach**
-   - Use **tdd-guide** agent
-   - Write tests first (RED)
-   - Implement to pass tests (GREEN)
-   - Refactor (IMPROVE)
+3. **Execute Plan**
+   - Use `executing-plans` skill to follow the written plan
+   - Use `dispatching-parallel-agents` for independent sub-tasks
+   - Use **tdd-guide** agent for TDD approach (RED → GREEN → REFACTOR)
    - Verify 80%+ coverage
 
-3. **Code Review**
-   - Use **code-reviewer** agent immediately after writing code
+4. **Code Review**
+   - Use `requesting-code-review` skill + **code-reviewer** agent
    - Address CRITICAL and HIGH issues
-   - Fix MEDIUM issues when possible
+   - Use `receiving-code-review` skill when processing feedback
 
-4. **Commit & Push**
-   - Detailed commit messages
-   - Follow conventional commits format
+5. **Finish & Merge**
+   - Use `finishing-a-development-branch` skill (cleanup, squash, PR)
+   - Use `verification-before-completion` skill before marking done
+   - Detailed commit messages following conventional commits
