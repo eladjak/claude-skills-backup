@@ -36,3 +36,9 @@ cp CLAUDE.md ~/.claude/CLAUDE.md
 ## Last Backup
 
 2026-02-13
+
+---
+
+⭐ If you find this useful, please star the repo!
+
+*[README בעברית](README.he.md)*
