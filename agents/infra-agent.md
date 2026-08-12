@@ -60,7 +60,7 @@ haiku (routine health checks) | sonnet (troubleshooting & recovery)
 | Server | IP | Purpose | Process Manager | Port | Health URL | OS |
 |--------|-----|---------|-----------------|------|------------|-----|
 | Kami VPS | 37.27.31.1 | WhatsApp bot (Kami agent) | PM2 | 3001 | https://kami.eladjak.com/health | Ubuntu 22.04 |
-| Kaylee VPS | 37.27.26.173 | Autonomous agent (inside OpenClaw) | PM2 | - | Via Kami Bridge (37.27.31.1:3001) | Ubuntu 22.04 |
+| Kaylee VPS | 37.27.31.1 | Autonomous agent (inside OpenClaw) | PM2 | - | Via Kami Bridge (37.27.31.1:3001) | Ubuntu 22.04 |
 
 ### Local Services
 | Service | Port | Manager | Auto-start | Health Check |
@@ -109,7 +109,7 @@ haiku (routine health checks) | sonnet (troubleshooting & recovery)
 ```
 1. Ping all servers (ICMP + TCP)
    - ping -c 3 37.27.31.1
-   - ping -c 3 37.27.26.173
+   - ping -c 3 37.27.31.1
 
 2. HTTP health endpoints
    - curl -s -o /dev/null -w "%{http_code} %{time_total}" https://kami.eladjak.com/health
@@ -119,26 +119,26 @@ haiku (routine health checks) | sonnet (troubleshooting & recovery)
 
 3. Disk usage (both VPS)
    - ssh root@37.27.31.1 "df -h / | tail -1"
-   - ssh root@37.27.26.173 "df -h / | tail -1"
+   - ssh root@37.27.31.1 "df -h / | tail -1"
 
 4. Memory usage
    - ssh root@37.27.31.1 "free -m | grep Mem"
-   - ssh root@37.27.26.173 "free -m | grep Mem"
+   - ssh root@37.27.31.1 "free -m | grep Mem"
 
 5. CPU load
    - ssh root@37.27.31.1 "uptime"
-   - ssh root@37.27.26.173 "uptime"
+   - ssh root@37.27.31.1 "uptime"
 
 6. PM2 process status
    - ssh root@37.27.31.1 "pm2 jlist"
-   - ssh root@37.27.26.173 "pm2 jlist"
+   - ssh root@37.27.31.1 "pm2 jlist"
 
 7. PM2 restart count check (restart storm detection)
    - Parse pm2 jlist for restart_time and unstable_restarts
 
 8. Log file sizes
    - ssh root@37.27.31.1 "du -sh ~/.pm2/logs/"
-   - ssh root@37.27.26.173 "du -sh ~/.pm2/logs/"
+   - ssh root@37.27.31.1 "du -sh ~/.pm2/logs/"
 
 9. Report: generate summary, escalate anomalies
 ```
@@ -163,11 +163,11 @@ haiku (routine health checks) | sonnet (troubleshooting & recovery)
 ```
 1. Rotate log files (>100MB)
    - ssh root@37.27.31.1 "pm2 flush"  # if logs > 100MB
-   - ssh root@37.27.26.173 "pm2 flush"
+   - ssh root@37.27.31.1 "pm2 flush"
 
 2. Clear temp/cache files
    - ssh root@37.27.31.1 "rm -rf /tmp/node-*"
-   - ssh root@37.27.26.173 "rm -rf /tmp/node-*"
+   - ssh root@37.27.31.1 "rm -rf /tmp/node-*"
 
 3. Verify backup integrity
    - Check last backup timestamp
@@ -175,7 +175,7 @@ haiku (routine health checks) | sonnet (troubleshooting & recovery)
 
 4. Check for security updates
    - ssh root@37.27.31.1 "apt list --upgradable 2>/dev/null | head -20"
-   - ssh root@37.27.26.173 "apt list --upgradable 2>/dev/null | head -20"
+   - ssh root@37.27.31.1 "apt list --upgradable 2>/dev/null | head -20"
 
 5. Generate daily infrastructure report
 ```
@@ -349,16 +349,16 @@ ssh root@37.27.31.1 "certbot certificates"         # SSL cert status
 ssh root@37.27.31.1 "certbot renew --dry-run"      # Test SSL renewal
 ssh root@37.27.31.1 "journalctl --since '1 hour ago' | tail -50"  # System logs
 
-# === Kaylee VPS (37.27.26.173) ===
-ssh root@37.27.26.173 "pm2 list"                   # Process status
-ssh root@37.27.26.173 "pm2 logs --lines 50"        # Recent logs
-ssh root@37.27.26.173 "pm2 jlist"                  # JSON process info
-ssh root@37.27.26.173 "pm2 flush"                  # Clear all logs
-ssh root@37.27.26.173 "df -h /"                    # Disk usage
-ssh root@37.27.26.173 "free -m"                    # Memory usage
-ssh root@37.27.26.173 "uptime"                     # CPU load average
-ssh root@37.27.26.173 "netstat -tlnp"              # Listening ports
-ssh root@37.27.26.173 "du -sh /root/* 2>/dev/null | sort -rh | head -10"  # Largest dirs
+# === Kaylee VPS (37.27.31.1) ===
+ssh root@37.27.31.1 "pm2 list"                   # Process status
+ssh root@37.27.31.1 "pm2 logs --lines 50"        # Recent logs
+ssh root@37.27.31.1 "pm2 jlist"                  # JSON process info
+ssh root@37.27.31.1 "pm2 flush"                  # Clear all logs
+ssh root@37.27.31.1 "df -h /"                    # Disk usage
+ssh root@37.27.31.1 "free -m"                    # Memory usage
+ssh root@37.27.31.1 "uptime"                     # CPU load average
+ssh root@37.27.31.1 "netstat -tlnp"              # Listening ports
+ssh root@37.27.31.1 "du -sh /root/* 2>/dev/null | sort -rh | head -10"  # Largest dirs
 
 # === Local Services ===
 curl -s -o /dev/null -w "%{http_code}" http://localhost:3456   # Dashboard
